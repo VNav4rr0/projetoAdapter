@@ -1,0 +1,15 @@
+{
+    "name": "vnav4rr0/projeto-adapter",
+    "description": "Implementacao do padrao de projeto Adapter (Book/EBook/Kindle) em PHP",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "autoload": {
+        "classmap": ["Structural"]
+    }
+}
