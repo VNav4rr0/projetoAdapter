@@ -4,48 +4,407 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit15230a839fdbd5ed545919025c14d3da
+class ComposerStaticInit487750d1f9eae45c2ecd15e8e3b923be
 {
     public static $files = array (
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        'e8aa6e4b5a1db2f56ae794f1505391a8' => __DIR__ . '/..' . '/amphp/amp/lib/functions.php',
+        '76cd0796156622033397994f25b0d8fc' => __DIR__ . '/..' . '/amphp/amp/lib/Internal/functions.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
+        'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
+        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
+        'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
+        '6cd5651c4fef5ed6b63e8d8b8ffbf3cc' => __DIR__ . '/..' . '/amphp/byte-stream/lib/functions.php',
+        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        'dc51568953534d6c54b08731e61104e2' => __DIR__ . '/..' . '/vimeo/psalm/src/functions.php',
+        '8e4171839e12546525126d38dac3dafa' => __DIR__ . '/..' . '/vimeo/psalm/src/spl_object_id.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
-        'P' => 
+        'p' =>
         array (
-            'PhpParser\\' => 10,
+            'phpDocumentor\\Reflection\\' => 25,
         ),
-        'D' => 
+        'X' =>
+        array (
+            'XdgBaseDir\\' => 11,
+        ),
+        'W' =>
+        array (
+            'Webmozart\\PathUtil\\' => 19,
+            'Webmozart\\Assert\\' => 17,
+        ),
+        'S' =>
+        array (
+            'Symfony\\Polyfill\\Php80\\' => 23,
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Polyfill\\Intl\\Normalizer\\' => 33,
+            'Symfony\\Polyfill\\Intl\\Grapheme\\' => 31,
+            'Symfony\\Polyfill\\Ctype\\' => 23,
+            'Symfony\\Contracts\\Service\\' => 26,
+            'Symfony\\Component\\String\\' => 25,
+            'Symfony\\Component\\Console\\' => 26,
+        ),
+        'P' =>
+        array (
+            'Psr\\Log\\' => 8,
+            'Psr\\Http\\Message\\' => 17,
+            'Psr\\Container\\' => 14,
+            'Psalm\\PhpUnitPlugin\\' => 20,
+            'Psalm\\' => 6,
+            'PhpParser\\' => 10,
+            'PackageVersions\\' => 16,
+            'PHPStan\\PhpDocParser\\' => 21,
+        ),
+        'L' =>
+        array (
+            'LanguageServerProtocol\\' => 23,
+        ),
+        'D' =>
         array (
             'Doctrine\\Instantiator\\' => 22,
+            'Doctrine\\Deprecations\\' => 22,
             'DeepCopy\\' => 9,
+        ),
+        'C' =>
+        array (
+            'Composer\\XdebugHandler\\' => 23,
+            'Composer\\Semver\\' => 16,
+            'Composer\\Pcre\\' => 14,
+        ),
+        'A' =>
+        array (
+            'Amp\\ByteStream\\' => 15,
+            'Amp\\' => 4,
+            'AdvancedJsonRpc\\' => 16,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'PhpParser\\' => 
+        'phpDocumentor\\Reflection\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
+        ),
+        'XdgBaseDir\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src',
+        ),
+        'Webmozart\\PathUtil\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/webmozart/path-util/src',
+        ),
+        'Webmozart\\Assert\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Symfony\\Polyfill\\Php80\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
+        ),
+        'Symfony\\Polyfill\\Mbstring\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Polyfill\\Intl\\Normalizer\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer',
+        ),
+        'Symfony\\Polyfill\\Intl\\Grapheme\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme',
+        ),
+        'Symfony\\Polyfill\\Ctype\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+        ),
+        'Symfony\\Contracts\\Service\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/symfony/service-contracts',
+        ),
+        'Symfony\\Component\\String\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/symfony/string',
+        ),
+        'Symfony\\Component\\Console\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/symfony/console',
+        ),
+        'Psr\\Log\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/src',
+        ),
+        'Psr\\Http\\Message\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'Psr\\Container\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/psr/container/src',
+        ),
+        'Psalm\\PhpUnitPlugin\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/psalm/plugin-phpunit/src',
+        ),
+        'Psalm\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/vimeo/psalm/src/Psalm',
+        ),
+        'PhpParser\\' =>
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
-        'Doctrine\\Instantiator\\' => 
+        'PackageVersions\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/composer/package-versions-deprecated/src/PackageVersions',
+        ),
+        'PHPStan\\PhpDocParser\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/phpstan/phpdoc-parser/src',
+        ),
+        'LanguageServerProtocol\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/felixfbecker/language-server-protocol/src',
+        ),
+        'Doctrine\\Instantiator\\' =>
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
         ),
-        'DeepCopy\\' => 
+        'Doctrine\\Deprecations\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/deprecations/lib/Doctrine/Deprecations',
+        ),
+        'DeepCopy\\' =>
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
+        ),
+        'Composer\\XdebugHandler\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/composer/xdebug-handler/src',
+        ),
+        'Composer\\Semver\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/composer/semver/src',
+        ),
+        'Composer\\Pcre\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/composer/pcre/src',
+        ),
+        'Amp\\ByteStream\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/amphp/byte-stream/lib',
+        ),
+        'Amp\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/amphp/amp/lib',
+        ),
+        'AdvancedJsonRpc\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/felixfbecker/advanced-json-rpc/lib',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'L' =>
+        array (
+            'LSS' =>
+            array (
+                0 => __DIR__ . '/..' . '/openlss/lib-array2xml',
+            ),
+        ),
+        'J' =>
+        array (
+            'JsonMapper' =>
+            array (
+                0 => __DIR__ . '/..' . '/netresearch/jsonmapper/src',
+            ),
         ),
     );
 
     public static $classMap = array (
+        'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'DesignPatterns\\Behavioral\\ChainOfResponsibilities\\Handler' => __DIR__ . '/../..' . '/Behavioral/ChainOfResponsibilities/Handler.php',
+        'DesignPatterns\\Behavioral\\ChainOfResponsibilities\\Responsible\\HttpInMemoryCacheHandler' => __DIR__ . '/../..' . '/Behavioral/ChainOfResponsibilities/Responsible/HttpInMemoryCacheHandler.php',
+        'DesignPatterns\\Behavioral\\ChainOfResponsibilities\\Responsible\\SlowDatabaseHandler' => __DIR__ . '/../..' . '/Behavioral/ChainOfResponsibilities/Responsible/SlowDatabaseHandler.php',
+        'DesignPatterns\\Behavioral\\ChainOfResponsibilities\\Tests\\ChainTest' => __DIR__ . '/../..' . '/Behavioral/ChainOfResponsibilities/Tests/ChainTest.php',
+        'DesignPatterns\\Behavioral\\Command\\AddMessageDateCommand' => __DIR__ . '/../..' . '/Behavioral/Command/AddMessageDateCommand.php',
+        'DesignPatterns\\Behavioral\\Command\\Command' => __DIR__ . '/../..' . '/Behavioral/Command/Command.php',
+        'DesignPatterns\\Behavioral\\Command\\HelloCommand' => __DIR__ . '/../..' . '/Behavioral/Command/HelloCommand.php',
+        'DesignPatterns\\Behavioral\\Command\\Invoker' => __DIR__ . '/../..' . '/Behavioral/Command/Invoker.php',
+        'DesignPatterns\\Behavioral\\Command\\Receiver' => __DIR__ . '/../..' . '/Behavioral/Command/Receiver.php',
+        'DesignPatterns\\Behavioral\\Command\\Tests\\CommandTest' => __DIR__ . '/../..' . '/Behavioral/Command/Tests/CommandTest.php',
+        'DesignPatterns\\Behavioral\\Command\\Tests\\UndoableCommandTest' => __DIR__ . '/../..' . '/Behavioral/Command/Tests/UndoableCommandTest.php',
+        'DesignPatterns\\Behavioral\\Command\\UndoableCommand' => __DIR__ . '/../..' . '/Behavioral/Command/UndoableCommand.php',
+        'DesignPatterns\\Behavioral\\Interpreter\\AbstractExp' => __DIR__ . '/../..' . '/Behavioral/Interpreter/AbstractExp.php',
+        'DesignPatterns\\Behavioral\\Interpreter\\AndExp' => __DIR__ . '/../..' . '/Behavioral/Interpreter/AndExp.php',
+        'DesignPatterns\\Behavioral\\Interpreter\\Context' => __DIR__ . '/../..' . '/Behavioral/Interpreter/Context.php',
+        'DesignPatterns\\Behavioral\\Interpreter\\OrExp' => __DIR__ . '/../..' . '/Behavioral/Interpreter/OrExp.php',
+        'DesignPatterns\\Behavioral\\Interpreter\\Tests\\InterpreterTest' => __DIR__ . '/../..' . '/Behavioral/Interpreter/Tests/InterpreterTest.php',
+        'DesignPatterns\\Behavioral\\Interpreter\\VariableExp' => __DIR__ . '/../..' . '/Behavioral/Interpreter/VariableExp.php',
+        'DesignPatterns\\Behavioral\\Iterator\\Book' => __DIR__ . '/../..' . '/Behavioral/Iterator/Book.php',
+        'DesignPatterns\\Behavioral\\Iterator\\BookList' => __DIR__ . '/../..' . '/Behavioral/Iterator/BookList.php',
+        'DesignPatterns\\Behavioral\\Iterator\\Tests\\IteratorTest' => __DIR__ . '/../..' . '/Behavioral/Iterator/Tests/IteratorTest.php',
+        'DesignPatterns\\Behavioral\\Mediator\\Colleague' => __DIR__ . '/../..' . '/Behavioral/Mediator/Colleague.php',
+        'DesignPatterns\\Behavioral\\Mediator\\Mediator' => __DIR__ . '/../..' . '/Behavioral/Mediator/Mediator.php',
+        'DesignPatterns\\Behavioral\\Mediator\\Ui' => __DIR__ . '/../..' . '/Behavioral/Mediator/Ui.php',
+        'DesignPatterns\\Behavioral\\Mediator\\UserRepository' => __DIR__ . '/../..' . '/Behavioral/Mediator/UserRepository.php',
+        'DesignPatterns\\Behavioral\\Mediator\\UserRepositoryUiMediator' => __DIR__ . '/../..' . '/Behavioral/Mediator/UserRepositoryUiMediator.php',
+        'DesignPatterns\\Behavioral\\Memento\\Memento' => __DIR__ . '/../..' . '/Behavioral/Memento/Memento.php',
+        'DesignPatterns\\Behavioral\\Memento\\State' => __DIR__ . '/../..' . '/Behavioral/Memento/State.php',
+        'DesignPatterns\\Behavioral\\Memento\\Tests\\MementoTest' => __DIR__ . '/../..' . '/Behavioral/Memento/Tests/MementoTest.php',
+        'DesignPatterns\\Behavioral\\Memento\\Ticket' => __DIR__ . '/../..' . '/Behavioral/Memento/Ticket.php',
+        'DesignPatterns\\Behavioral\\NullObject\\Logger' => __DIR__ . '/../..' . '/Behavioral/NullObject/Logger.php',
+        'DesignPatterns\\Behavioral\\NullObject\\NullLogger' => __DIR__ . '/../..' . '/Behavioral/NullObject/NullLogger.php',
+        'DesignPatterns\\Behavioral\\NullObject\\PrintLogger' => __DIR__ . '/../..' . '/Behavioral/NullObject/PrintLogger.php',
+        'DesignPatterns\\Behavioral\\NullObject\\Service' => __DIR__ . '/../..' . '/Behavioral/NullObject/Service.php',
+        'DesignPatterns\\Behavioral\\NullObject\\Tests\\LoggerTest' => __DIR__ . '/../..' . '/Behavioral/NullObject/Tests/LoggerTest.php',
+        'DesignPatterns\\Behavioral\\Observer\\Tests\\ObserverTest' => __DIR__ . '/../..' . '/Behavioral/Observer/Tests/ObserverTest.php',
+        'DesignPatterns\\Behavioral\\Observer\\User' => __DIR__ . '/../..' . '/Behavioral/Observer/User.php',
+        'DesignPatterns\\Behavioral\\Observer\\UserObserver' => __DIR__ . '/../..' . '/Behavioral/Observer/UserObserver.php',
+        'DesignPatterns\\Behavioral\\Specification\\AndSpecification' => __DIR__ . '/../..' . '/Behavioral/Specification/AndSpecification.php',
+        'DesignPatterns\\Behavioral\\Specification\\Item' => __DIR__ . '/../..' . '/Behavioral/Specification/Item.php',
+        'DesignPatterns\\Behavioral\\Specification\\NotSpecification' => __DIR__ . '/../..' . '/Behavioral/Specification/NotSpecification.php',
+        'DesignPatterns\\Behavioral\\Specification\\OrSpecification' => __DIR__ . '/../..' . '/Behavioral/Specification/OrSpecification.php',
+        'DesignPatterns\\Behavioral\\Specification\\PriceSpecification' => __DIR__ . '/../..' . '/Behavioral/Specification/PriceSpecification.php',
+        'DesignPatterns\\Behavioral\\Specification\\Specification' => __DIR__ . '/../..' . '/Behavioral/Specification/Specification.php',
+        'DesignPatterns\\Behavioral\\Specification\\Tests\\SpecificationTest' => __DIR__ . '/../..' . '/Behavioral/Specification/Tests/SpecificationTest.php',
+        'DesignPatterns\\Behavioral\\State\\ContextOrder' => __DIR__ . '/../..' . '/Behavioral/State/ContextOrder.php',
+        'DesignPatterns\\Behavioral\\State\\CreateOrder' => __DIR__ . '/../..' . '/Behavioral/State/CreateOrder.php',
+        'DesignPatterns\\Behavioral\\State\\OrderDone' => __DIR__ . '/../..' . '/Behavioral/State/OrderDone.php',
+        'DesignPatterns\\Behavioral\\State\\ShippingOrder' => __DIR__ . '/../..' . '/Behavioral/State/ShippingOrder.php',
+        'DesignPatterns\\Behavioral\\State\\StateOrder' => __DIR__ . '/../..' . '/Behavioral/State/StateOrder.php',
+        'DesignPatterns\\Behavioral\\State\\Tests\\StateTest' => __DIR__ . '/../..' . '/Behavioral/State/Tests/StateTest.php',
+        'DesignPatterns\\Behavioral\\Strategy\\Comparator' => __DIR__ . '/../..' . '/Behavioral/Strategy/Comparator.php',
+        'DesignPatterns\\Behavioral\\Strategy\\Context' => __DIR__ . '/../..' . '/Behavioral/Strategy/Context.php',
+        'DesignPatterns\\Behavioral\\Strategy\\DateComparator' => __DIR__ . '/../..' . '/Behavioral/Strategy/DateComparator.php',
+        'DesignPatterns\\Behavioral\\Strategy\\IdComparator' => __DIR__ . '/../..' . '/Behavioral/Strategy/IdComparator.php',
+        'DesignPatterns\\Behavioral\\Strategy\\Tests\\StrategyTest' => __DIR__ . '/../..' . '/Behavioral/Strategy/Tests/StrategyTest.php',
+        'DesignPatterns\\Behavioral\\TemplateMethod\\BeachJourney' => __DIR__ . '/../..' . '/Behavioral/TemplateMethod/BeachJourney.php',
+        'DesignPatterns\\Behavioral\\TemplateMethod\\CityJourney' => __DIR__ . '/../..' . '/Behavioral/TemplateMethod/CityJourney.php',
+        'DesignPatterns\\Behavioral\\TemplateMethod\\Journey' => __DIR__ . '/../..' . '/Behavioral/TemplateMethod/Journey.php',
+        'DesignPatterns\\Behavioral\\TemplateMethod\\Tests\\JourneyTest' => __DIR__ . '/../..' . '/Behavioral/TemplateMethod/Tests/JourneyTest.php',
+        'DesignPatterns\\Behavioral\\Visitor\\Group' => __DIR__ . '/../..' . '/Behavioral/Visitor/Group.php',
+        'DesignPatterns\\Behavioral\\Visitor\\RecordingVisitor' => __DIR__ . '/../..' . '/Behavioral/Visitor/RecordingVisitor.php',
+        'DesignPatterns\\Behavioral\\Visitor\\Role' => __DIR__ . '/../..' . '/Behavioral/Visitor/Role.php',
+        'DesignPatterns\\Behavioral\\Visitor\\RoleVisitor' => __DIR__ . '/../..' . '/Behavioral/Visitor/RoleVisitor.php',
+        'DesignPatterns\\Behavioral\\Visitor\\User' => __DIR__ . '/../..' . '/Behavioral/Visitor/User.php',
+        'DesignPatterns\\Creational\\AbstractFactory\\CsvWriter' => __DIR__ . '/../..' . '/Creational/AbstractFactory/CsvWriter.php',
+        'DesignPatterns\\Creational\\AbstractFactory\\JsonWriter' => __DIR__ . '/../..' . '/Creational/AbstractFactory/JsonWriter.php',
+        'DesignPatterns\\Creational\\AbstractFactory\\Tests\\AbstractFactoryTest' => __DIR__ . '/../..' . '/Creational/AbstractFactory/Tests/AbstractFactoryTest.php',
+        'DesignPatterns\\Creational\\AbstractFactory\\UnixCsvWriter' => __DIR__ . '/../..' . '/Creational/AbstractFactory/UnixCsvWriter.php',
+        'DesignPatterns\\Creational\\AbstractFactory\\UnixJsonWriter' => __DIR__ . '/../..' . '/Creational/AbstractFactory/UnixJsonWriter.php',
+        'DesignPatterns\\Creational\\AbstractFactory\\UnixWriterFactory' => __DIR__ . '/../..' . '/Creational/AbstractFactory/UnixWriterFactory.php',
+        'DesignPatterns\\Creational\\AbstractFactory\\WinCsvWriter' => __DIR__ . '/../..' . '/Creational/AbstractFactory/WinCsvWriter.php',
+        'DesignPatterns\\Creational\\AbstractFactory\\WinJsonWriter' => __DIR__ . '/../..' . '/Creational/AbstractFactory/WinJsonWriter.php',
+        'DesignPatterns\\Creational\\AbstractFactory\\WinWriterFactory' => __DIR__ . '/../..' . '/Creational/AbstractFactory/WinWriterFactory.php',
+        'DesignPatterns\\Creational\\AbstractFactory\\WriterFactory' => __DIR__ . '/../..' . '/Creational/AbstractFactory/WriterFactory.php',
+        'DesignPatterns\\Creational\\Builder\\Builder' => __DIR__ . '/../..' . '/Creational/Builder/Builder.php',
+        'DesignPatterns\\Creational\\Builder\\CarBuilder' => __DIR__ . '/../..' . '/Creational/Builder/CarBuilder.php',
+        'DesignPatterns\\Creational\\Builder\\Director' => __DIR__ . '/../..' . '/Creational/Builder/Director.php',
+        'DesignPatterns\\Creational\\Builder\\Parts\\Car' => __DIR__ . '/../..' . '/Creational/Builder/Parts/Car.php',
+        'DesignPatterns\\Creational\\Builder\\Parts\\Door' => __DIR__ . '/../..' . '/Creational/Builder/Parts/Door.php',
+        'DesignPatterns\\Creational\\Builder\\Parts\\Engine' => __DIR__ . '/../..' . '/Creational/Builder/Parts/Engine.php',
+        'DesignPatterns\\Creational\\Builder\\Parts\\Truck' => __DIR__ . '/../..' . '/Creational/Builder/Parts/Truck.php',
+        'DesignPatterns\\Creational\\Builder\\Parts\\Vehicle' => __DIR__ . '/../..' . '/Creational/Builder/Parts/Vehicle.php',
+        'DesignPatterns\\Creational\\Builder\\Parts\\Wheel' => __DIR__ . '/../..' . '/Creational/Builder/Parts/Wheel.php',
+        'DesignPatterns\\Creational\\Builder\\Tests\\DirectorTest' => __DIR__ . '/../..' . '/Creational/Builder/Tests/DirectorTest.php',
+        'DesignPatterns\\Creational\\Builder\\TruckBuilder' => __DIR__ . '/../..' . '/Creational/Builder/TruckBuilder.php',
+        'DesignPatterns\\Creational\\FactoryMethod\\FileLogger' => __DIR__ . '/../..' . '/Creational/FactoryMethod/FileLogger.php',
+        'DesignPatterns\\Creational\\FactoryMethod\\FileLoggerFactory' => __DIR__ . '/../..' . '/Creational/FactoryMethod/FileLoggerFactory.php',
+        'DesignPatterns\\Creational\\FactoryMethod\\Logger' => __DIR__ . '/../..' . '/Creational/FactoryMethod/Logger.php',
+        'DesignPatterns\\Creational\\FactoryMethod\\LoggerFactory' => __DIR__ . '/../..' . '/Creational/FactoryMethod/LoggerFactory.php',
+        'DesignPatterns\\Creational\\FactoryMethod\\StdoutLogger' => __DIR__ . '/../..' . '/Creational/FactoryMethod/StdoutLogger.php',
+        'DesignPatterns\\Creational\\FactoryMethod\\StdoutLoggerFactory' => __DIR__ . '/../..' . '/Creational/FactoryMethod/StdoutLoggerFactory.php',
+        'DesignPatterns\\Creational\\FactoryMethod\\Tests\\FactoryMethodTest' => __DIR__ . '/../..' . '/Creational/FactoryMethod/Tests/FactoryMethodTest.php',
+        'DesignPatterns\\Creational\\Pool\\StringReverseWorker' => __DIR__ . '/../..' . '/Creational/Pool/StringReverseWorker.php',
+        'DesignPatterns\\Creational\\Pool\\Tests\\PoolTest' => __DIR__ . '/../..' . '/Creational/Pool/Tests/PoolTest.php',
+        'DesignPatterns\\Creational\\Pool\\WorkerPool' => __DIR__ . '/../..' . '/Creational/Pool/WorkerPool.php',
+        'DesignPatterns\\Creational\\Prototype\\BarBookPrototype' => __DIR__ . '/../..' . '/Creational/Prototype/BarBookPrototype.php',
+        'DesignPatterns\\Creational\\Prototype\\BookPrototype' => __DIR__ . '/../..' . '/Creational/Prototype/BookPrototype.php',
+        'DesignPatterns\\Creational\\Prototype\\FooBookPrototype' => __DIR__ . '/../..' . '/Creational/Prototype/FooBookPrototype.php',
+        'DesignPatterns\\Creational\\Prototype\\Tests\\PrototypeTest' => __DIR__ . '/../..' . '/Creational/Prototype/Tests/PrototypeTest.php',
+        'DesignPatterns\\Creational\\SimpleFactory\\Bicycle' => __DIR__ . '/../..' . '/Creational/SimpleFactory/Bicycle.php',
+        'DesignPatterns\\Creational\\SimpleFactory\\SimpleFactory' => __DIR__ . '/../..' . '/Creational/SimpleFactory/SimpleFactory.php',
+        'DesignPatterns\\Creational\\SimpleFactory\\Tests\\SimpleFactoryTest' => __DIR__ . '/../..' . '/Creational/SimpleFactory/Tests/SimpleFactoryTest.php',
+        'DesignPatterns\\Creational\\Singleton\\Singleton' => __DIR__ . '/../..' . '/Creational/Singleton/Singleton.php',
+        'DesignPatterns\\Creational\\Singleton\\Tests\\SingletonTest' => __DIR__ . '/../..' . '/Creational/Singleton/Tests/SingletonTest.php',
+        'DesignPatterns\\Creational\\StaticFactory\\FormatNumber' => __DIR__ . '/../..' . '/Creational/StaticFactory/FormatNumber.php',
+        'DesignPatterns\\Creational\\StaticFactory\\FormatString' => __DIR__ . '/../..' . '/Creational/StaticFactory/FormatString.php',
+        'DesignPatterns\\Creational\\StaticFactory\\Formatter' => __DIR__ . '/../..' . '/Creational/StaticFactory/Formatter.php',
+        'DesignPatterns\\Creational\\StaticFactory\\StaticFactory' => __DIR__ . '/../..' . '/Creational/StaticFactory/StaticFactory.php',
+        'DesignPatterns\\Creational\\StaticFactory\\Tests\\StaticFactoryTest' => __DIR__ . '/../..' . '/Creational/StaticFactory/Tests/StaticFactoryTest.php',
+        'DesignPatterns\\More\\EAV\\Attribute' => __DIR__ . '/../..' . '/More/EAV/Attribute.php',
+        'DesignPatterns\\More\\EAV\\Entity' => __DIR__ . '/../..' . '/More/EAV/Entity.php',
+        'DesignPatterns\\More\\EAV\\Tests\\EAVTest' => __DIR__ . '/../..' . '/More/EAV/Tests/EAVTest.php',
+        'DesignPatterns\\More\\EAV\\Value' => __DIR__ . '/../..' . '/More/EAV/Value.php',
+        'DesignPatterns\\More\\Repository\\Domain\\Post' => __DIR__ . '/../..' . '/More/Repository/Domain/Post.php',
+        'DesignPatterns\\More\\Repository\\Domain\\PostId' => __DIR__ . '/../..' . '/More/Repository/Domain/PostId.php',
+        'DesignPatterns\\More\\Repository\\Domain\\PostStatus' => __DIR__ . '/../..' . '/More/Repository/Domain/PostStatus.php',
+        'DesignPatterns\\More\\Repository\\InMemoryPersistence' => __DIR__ . '/../..' . '/More/Repository/InMemoryPersistence.php',
+        'DesignPatterns\\More\\Repository\\Persistence' => __DIR__ . '/../..' . '/More/Repository/Persistence.php',
+        'DesignPatterns\\More\\Repository\\PostRepository' => __DIR__ . '/../..' . '/More/Repository/PostRepository.php',
+        'DesignPatterns\\More\\Repository\\Tests\\PostRepositoryTest' => __DIR__ . '/../..' . '/More/Repository/Tests/PostRepositoryTest.php',
+        'DesignPatterns\\More\\ServiceLocator\\LogService' => __DIR__ . '/../..' . '/More/ServiceLocator/LogService.php',
+        'DesignPatterns\\More\\ServiceLocator\\Service' => __DIR__ . '/../..' . '/More/ServiceLocator/Service.php',
+        'DesignPatterns\\More\\ServiceLocator\\ServiceLocator' => __DIR__ . '/../..' . '/More/ServiceLocator/ServiceLocator.php',
+        'DesignPatterns\\More\\ServiceLocator\\Tests\\ServiceLocatorTest' => __DIR__ . '/../..' . '/More/ServiceLocator/Tests/ServiceLocatorTest.php',
         'DesignPatterns\\Structural\\Adapter\\Book' => __DIR__ . '/../..' . '/Structural/Adapter/Book.php',
         'DesignPatterns\\Structural\\Adapter\\EBook' => __DIR__ . '/../..' . '/Structural/Adapter/EBook.php',
         'DesignPatterns\\Structural\\Adapter\\EBookAdapter' => __DIR__ . '/../..' . '/Structural/Adapter/EBookAdapter.php',
         'DesignPatterns\\Structural\\Adapter\\Kindle' => __DIR__ . '/../..' . '/Structural/Adapter/Kindle.php',
         'DesignPatterns\\Structural\\Adapter\\PaperBook' => __DIR__ . '/../..' . '/Structural/Adapter/PaperBook.php',
         'DesignPatterns\\Structural\\Adapter\\Tests\\AdapterTest' => __DIR__ . '/../..' . '/Structural/Adapter/Tests/AdapterTest.php',
+        'DesignPatterns\\Structural\\Bridge\\Formatter' => __DIR__ . '/../..' . '/Structural/Bridge/Formatter.php',
+        'DesignPatterns\\Structural\\Bridge\\HelloWorldService' => __DIR__ . '/../..' . '/Structural/Bridge/HelloWorldService.php',
+        'DesignPatterns\\Structural\\Bridge\\HtmlFormatter' => __DIR__ . '/../..' . '/Structural/Bridge/HtmlFormatter.php',
+        'DesignPatterns\\Structural\\Bridge\\PingService' => __DIR__ . '/../..' . '/Structural/Bridge/PingService.php',
+        'DesignPatterns\\Structural\\Bridge\\PlainTextFormatter' => __DIR__ . '/../..' . '/Structural/Bridge/PlainTextFormatter.php',
+        'DesignPatterns\\Structural\\Bridge\\Service' => __DIR__ . '/../..' . '/Structural/Bridge/Service.php',
+        'DesignPatterns\\Structural\\Bridge\\Tests\\BridgeTest' => __DIR__ . '/../..' . '/Structural/Bridge/Tests/BridgeTest.php',
+        'DesignPatterns\\Structural\\Composite\\Form' => __DIR__ . '/../..' . '/Structural/Composite/Form.php',
+        'DesignPatterns\\Structural\\Composite\\InputElement' => __DIR__ . '/../..' . '/Structural/Composite/InputElement.php',
+        'DesignPatterns\\Structural\\Composite\\Renderable' => __DIR__ . '/../..' . '/Structural/Composite/Renderable.php',
+        'DesignPatterns\\Structural\\Composite\\Tests\\CompositeTest' => __DIR__ . '/../..' . '/Structural/Composite/Tests/CompositeTest.php',
+        'DesignPatterns\\Structural\\Composite\\TextElement' => __DIR__ . '/../..' . '/Structural/Composite/TextElement.php',
+        'DesignPatterns\\Structural\\DataMapper\\StorageAdapter' => __DIR__ . '/../..' . '/Structural/DataMapper/StorageAdapter.php',
+        'DesignPatterns\\Structural\\DataMapper\\Tests\\DataMapperTest' => __DIR__ . '/../..' . '/Structural/DataMapper/Tests/DataMapperTest.php',
+        'DesignPatterns\\Structural\\DataMapper\\User' => __DIR__ . '/../..' . '/Structural/DataMapper/User.php',
+        'DesignPatterns\\Structural\\DataMapper\\UserMapper' => __DIR__ . '/../..' . '/Structural/DataMapper/UserMapper.php',
+        'DesignPatterns\\Structural\\Decorator\\Booking' => __DIR__ . '/../..' . '/Structural/Decorator/Booking.php',
+        'DesignPatterns\\Structural\\Decorator\\BookingDecorator' => __DIR__ . '/../..' . '/Structural/Decorator/BookingDecorator.php',
+        'DesignPatterns\\Structural\\Decorator\\DoubleRoomBooking' => __DIR__ . '/../..' . '/Structural/Decorator/DoubleRoomBooking.php',
+        'DesignPatterns\\Structural\\Decorator\\ExtraBed' => __DIR__ . '/../..' . '/Structural/Decorator/ExtraBed.php',
+        'DesignPatterns\\Structural\\Decorator\\Tests\\DecoratorTest' => __DIR__ . '/../..' . '/Structural/Decorator/Tests/DecoratorTest.php',
+        'DesignPatterns\\Structural\\Decorator\\WiFi' => __DIR__ . '/../..' . '/Structural/Decorator/WiFi.php',
+        'DesignPatterns\\Structural\\DependencyInjection\\DatabaseConfiguration' => __DIR__ . '/../..' . '/Structural/DependencyInjection/DatabaseConfiguration.php',
+        'DesignPatterns\\Structural\\DependencyInjection\\DatabaseConnection' => __DIR__ . '/../..' . '/Structural/DependencyInjection/DatabaseConnection.php',
+        'DesignPatterns\\Structural\\DependencyInjection\\Tests\\DependencyInjectionTest' => __DIR__ . '/../..' . '/Structural/DependencyInjection/Tests/DependencyInjectionTest.php',
+        'DesignPatterns\\Structural\\Facade\\Bios' => __DIR__ . '/../..' . '/Structural/Facade/Bios.php',
+        'DesignPatterns\\Structural\\Facade\\Facade' => __DIR__ . '/../..' . '/Structural/Facade/Facade.php',
+        'DesignPatterns\\Structural\\Facade\\OperatingSystem' => __DIR__ . '/../..' . '/Structural/Facade/OperatingSystem.php',
+        'DesignPatterns\\Structural\\Facade\\Tests\\FacadeTest' => __DIR__ . '/../..' . '/Structural/Facade/Tests/FacadeTest.php',
+        'DesignPatterns\\Structural\\FluentInterface\\Sql' => __DIR__ . '/../..' . '/Structural/FluentInterface/Sql.php',
+        'DesignPatterns\\Structural\\FluentInterface\\Tests\\FluentInterfaceTest' => __DIR__ . '/../..' . '/Structural/FluentInterface/Tests/FluentInterfaceTest.php',
+        'DesignPatterns\\Structural\\Flyweight\\Character' => __DIR__ . '/../..' . '/Structural/Flyweight/Character.php',
+        'DesignPatterns\\Structural\\Flyweight\\Tests\\FlyweightTest' => __DIR__ . '/../..' . '/Structural/Flyweight/Tests/FlyweightTest.php',
+        'DesignPatterns\\Structural\\Flyweight\\Text' => __DIR__ . '/../..' . '/Structural/Flyweight/Text.php',
+        'DesignPatterns\\Structural\\Flyweight\\TextFactory' => __DIR__ . '/../..' . '/Structural/Flyweight/TextFactory.php',
+        'DesignPatterns\\Structural\\Flyweight\\Word' => __DIR__ . '/../..' . '/Structural/Flyweight/Word.php',
+        'DesignPatterns\\Structural\\Proxy\\BankAccount' => __DIR__ . '/../..' . '/Structural/Proxy/BankAccount.php',
+        'DesignPatterns\\Structural\\Proxy\\BankAccountProxy' => __DIR__ . '/../..' . '/Structural/Proxy/BankAccountProxy.php',
+        'DesignPatterns\\Structural\\Proxy\\HeavyBankAccount' => __DIR__ . '/../..' . '/Structural/Proxy/HeavyBankAccount.php',
+        'DesignPatterns\\Structural\\Proxy\\Tests\\ProxyTest' => __DIR__ . '/../..' . '/Structural/Proxy/Tests/ProxyTest.php',
+        'DesignPatterns\\Structural\\Registry\\Registry' => __DIR__ . '/../..' . '/Structural/Registry/Registry.php',
+        'DesignPatterns\\Structural\\Registry\\Service' => __DIR__ . '/../..' . '/Structural/Registry/Service.php',
+        'DesignPatterns\\Structural\\Registry\\Tests\\RegistryTest' => __DIR__ . '/../..' . '/Structural/Registry/Tests/RegistryTest.php',
+        'DesignPatterns\\Tests\\Mediator\\Tests\\MediatorTest' => __DIR__ . '/../..' . '/Behavioral/Mediator/Tests/MediatorTest.php',
+        'DesignPatterns\\Tests\\Visitor\\Tests\\VisitorTest' => __DIR__ . '/../..' . '/Behavioral/Visitor/Tests/VisitorTest.php',
+        'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
         'PHPUnit\\Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit\\Framework\\ActualValueIsNotAnObjectException' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Exception/ActualValueIsNotAnObjectException.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert.php',
@@ -436,7 +795,6 @@ class ComposerStaticInit15230a839fdbd5ed545919025c14d3da
         'PharIo\\Manifest\\ManifestLoader' => __DIR__ . '/..' . '/phar-io/manifest/src/ManifestLoader.php',
         'PharIo\\Manifest\\ManifestLoaderException' => __DIR__ . '/..' . '/phar-io/manifest/src/exceptions/ManifestLoaderException.php',
         'PharIo\\Manifest\\ManifestSerializer' => __DIR__ . '/..' . '/phar-io/manifest/src/ManifestSerializer.php',
-        'PharIo\\Manifest\\NoEmailAddressException' => __DIR__ . '/..' . '/phar-io/manifest/src/exceptions/NoEmailAddressException.php',
         'PharIo\\Manifest\\PhpElement' => __DIR__ . '/..' . '/phar-io/manifest/src/xml/PhpElement.php',
         'PharIo\\Manifest\\PhpExtensionRequirement' => __DIR__ . '/..' . '/phar-io/manifest/src/values/PhpExtensionRequirement.php',
         'PharIo\\Manifest\\PhpVersionRequirement' => __DIR__ . '/..' . '/phar-io/manifest/src/values/PhpVersionRequirement.php',
@@ -467,6 +825,7 @@ class ComposerStaticInit15230a839fdbd5ed545919025c14d3da
         'PharIo\\Version\\VersionConstraintParser' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintParser.php',
         'PharIo\\Version\\VersionConstraintValue' => __DIR__ . '/..' . '/phar-io/version/src/VersionConstraintValue.php',
         'PharIo\\Version\\VersionNumber' => __DIR__ . '/..' . '/phar-io/version/src/VersionNumber.php',
+        'PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
         'SebastianBergmann\\CliParser\\AmbiguousOptionException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/AmbiguousOptionException.php',
         'SebastianBergmann\\CliParser\\Exception' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/Exception.php',
         'SebastianBergmann\\CliParser\\OptionDoesNotAllowArgumentException' => __DIR__ . '/..' . '/sebastian/cli-parser/src/exceptions/OptionDoesNotAllowArgumentException.php',
@@ -667,6 +1026,7 @@ class ComposerStaticInit15230a839fdbd5ed545919025c14d3da
         'SebastianBergmann\\Type\\UnknownType' => __DIR__ . '/..' . '/sebastian/type/src/type/UnknownType.php',
         'SebastianBergmann\\Type\\VoidType' => __DIR__ . '/..' . '/sebastian/type/src/type/VoidType.php',
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
+        'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'TheSeer\\Tokenizer\\Exception' => __DIR__ . '/..' . '/theseer/tokenizer/src/Exception.php',
         'TheSeer\\Tokenizer\\NamespaceUri' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUri.php',
         'TheSeer\\Tokenizer\\NamespaceUriException' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUriException.php',
@@ -675,14 +1035,17 @@ class ComposerStaticInit15230a839fdbd5ed545919025c14d3da
         'TheSeer\\Tokenizer\\TokenCollectionException' => __DIR__ . '/..' . '/theseer/tokenizer/src/TokenCollectionException.php',
         'TheSeer\\Tokenizer\\Tokenizer' => __DIR__ . '/..' . '/theseer/tokenizer/src/Tokenizer.php',
         'TheSeer\\Tokenizer\\XMLSerializer' => __DIR__ . '/..' . '/theseer/tokenizer/src/XMLSerializer.php',
+        'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
+        'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit15230a839fdbd5ed545919025c14d3da::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit15230a839fdbd5ed545919025c14d3da::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit15230a839fdbd5ed545919025c14d3da::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit487750d1f9eae45c2ecd15e8e3b923be::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit487750d1f9eae45c2ecd15e8e3b923be::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit487750d1f9eae45c2ecd15e8e3b923be::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit487750d1f9eae45c2ecd15e8e3b923be::$classMap;
 
         }, null, ClassLoader::class);
     }

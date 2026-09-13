@@ -19,7 +19,6 @@ use function dirname;
 use function explode;
 use function extension_loaded;
 use function file;
-use function file_exists;
 use function file_get_contents;
 use function file_put_contents;
 use function is_array;
@@ -56,9 +55,7 @@ use PHPUnit\Framework\SyntheticSkippedError;
 use PHPUnit\Framework\Test;
 use PHPUnit\Framework\TestResult;
 use PHPUnit\Util\PHP\AbstractPhpProcess;
-use SebastianBergmann\CodeCoverage\InvalidArgumentException;
 use SebastianBergmann\CodeCoverage\RawCodeCoverageData;
-use SebastianBergmann\CodeCoverage\UnintentionallyCoveredCodeException;
 use SebastianBergmann\Template\Template;
 use SebastianBergmann\Timer\Timer;
 use Throwable;
@@ -88,15 +85,19 @@ final class PhptTestCase implements Reorderable, SelfDescribing, Test
      *
      * @throws Exception
      */
-    public function __construct(string $filename, ?AbstractPhpProcess $phpUtil = null)
+    public function __construct(string $filename, AbstractPhpProcess $phpUtil = null)
     {
-        $this->ensureFileExists($filename);
+        if (!is_file($filename)) {
+            throw new Exception(
+                sprintf(
+                    'File "%s" does not exist.',
+                    $filename,
+                ),
+            );
+        }
 
         $this->filename = $filename;
-
-        $this->ensureCoverageFileDoesNotExist();
-
-        $this->phpUtil = $phpUtil ?: AbstractPhpProcess::factory();
+        $this->phpUtil  = $phpUtil ?: AbstractPhpProcess::factory();
     }
 
     /**
@@ -110,12 +111,12 @@ final class PhptTestCase implements Reorderable, SelfDescribing, Test
     /**
      * Runs a test and collects its result in a TestResult instance.
      *
+     * @throws \SebastianBergmann\CodeCoverage\InvalidArgumentException
+     * @throws \SebastianBergmann\CodeCoverage\UnintentionallyCoveredCodeException
      * @throws \SebastianBergmann\RecursionContext\InvalidArgumentException
      * @throws Exception
-     * @throws InvalidArgumentException
-     * @throws UnintentionallyCoveredCodeException
      */
-    public function run(?TestResult $result = null): TestResult
+    public function run(TestResult $result = null): TestResult
     {
         if ($result === null) {
             $result = new TestResult;
@@ -342,7 +343,7 @@ final class PhptTestCase implements Reorderable, SelfDescribing, Test
         foreach (explode("\n", trim($content)) as $e) {
             $e = explode('=', trim($e), 2);
 
-            if ($e[0] !== '' && isset($e[1])) {
+            if (!empty($e[0]) && isset($e[1])) {
                 $env[$e[0]] = $e[1];
             }
         }
@@ -654,14 +655,7 @@ final class PhptTestCase implements Reorderable, SelfDescribing, Test
             $buffer = @file_get_contents($files['coverage']);
 
             if ($buffer !== false) {
-                $coverage = @unserialize(
-                    $buffer,
-                    [
-                        'allowed_classes' => [
-                            RawCodeCoverageData::class,
-                        ],
-                    ],
-                );
+                $coverage = @unserialize($buffer);
 
                 if ($coverage === false) {
                     $coverage = RawCodeCoverageData::fromXdebugWithoutPathCoverage([]);
@@ -837,6 +831,7 @@ final class PhptTestCase implements Reorderable, SelfDescribing, Test
             'open_basedir=',
             'output_buffering=Off',
             'output_handler=',
+            'report_memleaks=0',
             'report_zend_debug=0',
         ];
 
@@ -865,38 +860,5 @@ final class PhptTestCase implements Reorderable, SelfDescribing, Test
         }
 
         return $settings;
-    }
-
-    /**
-     * @throws Exception
-     */
-    private function ensureFileExists(string $filename): void
-    {
-        if (!is_file($filename)) {
-            throw new Exception(
-                sprintf(
-                    'File "%s" does not exist.',
-                    $filename,
-                ),
-            );
-        }
-    }
-
-    /**
-     * @throws Exception
-     */
-    private function ensureCoverageFileDoesNotExist(): void
-    {
-        $files = $this->getCoverageFiles();
-
-        if (file_exists($files['coverage'])) {
-            throw new Exception(
-                sprintf(
-                    'File %s exists, PHPT test %s will not be executed',
-                    $files['coverage'],
-                    $this->filename,
-                ),
-            );
-        }
     }
 }

@@ -13,7 +13,7 @@ use PHPUnit\Framework\MockObject\Invocation;
 use PHPUnit\Framework\SelfDescribing;
 
 /**
- * @internal This interface is not covered by the backward compatibility promise for PHPUnit
+ * @internal This class is not covered by the backward compatibility promise for PHPUnit
  */
 interface Stub extends SelfDescribing
 {
