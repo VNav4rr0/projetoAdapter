@@ -20,7 +20,7 @@ use function sprintf;
 final class VersionComparisonOperator
 {
     /**
-     * @psalm-var '!='|'<'|'<='|'<>'|'='|'=='|'>'|'>='|'eq'|'ge'|'gt'|'le'|'lt'|'ne'
+     * @psalm-var '<'|'lt'|'<='|'le'|'>'|'gt'|'>='|'ge'|'=='|'='|'eq'|'!='|'<>'|'ne'
      */
     private $operator;
 

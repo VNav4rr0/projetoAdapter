@@ -42,9 +42,9 @@ final class Registry
     }
 
     /**
-     * @psalm-param class-string $class
-     *
      * @throws Exception
+     *
+     * @psalm-param class-string $class
      */
     public function forClassName(string $class): DocBlock
     {
@@ -68,9 +68,9 @@ final class Registry
     }
 
     /**
-     * @psalm-param class-string $classInHierarchy
-     *
      * @throws Exception
+     *
+     * @psalm-param class-string $classInHierarchy
      */
     public function forMethod(string $classInHierarchy, string $method): DocBlock
     {
